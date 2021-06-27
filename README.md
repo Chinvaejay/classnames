@@ -5,13 +5,13 @@
 # 命令
 按`cmd + shift + P` 输入 `Convert ClassName`
 
-![使用命令](src/assets/使用命令.gif)
+![使用命令](https://github.com/Chinvaejay/classnames/blob/master/src/assets/%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4.gif?raw=true)
 
 # 快捷键
 
 cmd + shift + a
 
-# ![使用自动复制css文件](src/assets/使用自动复制css文件.gif)
+# ![使用自动复制css文件](https://github.com/Chinvaejay/classnames/blob/master/src/assets/%E4%BD%BF%E7%94%A8%E8%87%AA%E5%8A%A8%E5%A4%8D%E5%88%B6css%E6%96%87%E4%BB%B6.gif?raw=true)
 
 # 下载
 已经上架：[marketplace.visualstudio.com]()
