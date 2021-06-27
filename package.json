@@ -1,0 +1,90 @@
+{
+    "name": "classnames",
+    "displayName": "classnames",
+    "description": "Convert className",
+    "version": "0.0.1",
+    "publisher": "qinweijie",
+    "engines": {
+        "vscode": "^1.57.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:classnames.convert",
+        "onLanguage:javascript",
+        "onLanguage:typescript",
+        "onLanguage:jsx",
+        "onLanguage:javascriptreact",
+        "onLanguage:typescriptreact"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "classnames.convert",
+                "title": "Convert ClassName"
+            }
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "when": "editorFocus",
+                    "command": "classnames.convert",
+                    "group": "navigation"
+                }
+            ]
+        },
+        "keybindings": [
+            {
+                "command": "classnames.convert",
+                "key": "ctrl+shift+a",
+                "mac": "cmd+shift+a",
+                "when": "editorTextFocus"
+            }
+        ],
+		"configuration": {
+			"type": "object",
+			"title": "Convert ClassName 配置",
+			"properties": {
+				"classnames.moduleName": {
+					"type": "string",
+					"default": "style",
+					"description": "引入css模块名称"
+				},
+				"classnames.classnames": {
+					"type": "string",
+					"default": "classnames",
+					"description": "classnames模块引入别名"
+				},
+				"classnames.copy": {
+					"type": "boolean",
+					"default": false,
+					"description": "将*.css文件复制生成*.module.css, 并引入"
+				}
+				
+			}
+		}
+    },
+    "scripts": {
+        "vscode:prepublish": "yarn run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "yarn run compile && yarn run lint",
+        "lint": "eslint src --ext ts --fix",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.57.0",
+        "@types/glob": "^7.1.3",
+        "@types/mocha": "^8.2.2",
+        "@types/node": "14.x",
+        "eslint": "^7.27.0",
+        "@typescript-eslint/eslint-plugin": "^4.26.0",
+        "@typescript-eslint/parser": "^4.26.0",
+        "glob": "^7.1.7",
+        "mocha": "^8.4.0",
+        "typescript": "^4.3.2",
+        "vscode-test": "^1.5.2"
+    }
+}
