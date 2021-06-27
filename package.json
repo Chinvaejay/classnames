@@ -1,6 +1,10 @@
 {
     "name": "classnames",
     "displayName": "classnames",
+    "repository": {
+        "type" : "git", 
+        "url" : "git@github.com:Chinvaejay/classnames.git"
+    },
     "description": "Convert className",
     "version": "0.0.1",
     "publisher": "qinweijie",
