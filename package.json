@@ -6,7 +6,7 @@
         "url": "git@github.com:Chinvaejay/classnames.git"
     },
     "description": "Convert className",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "publisher": "qinweijie",
     "engines": {
         "vscode": "^1.57.0"
