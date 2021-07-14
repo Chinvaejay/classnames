@@ -2,11 +2,11 @@
     "name": "classnames",
     "displayName": "classnames",
     "repository": {
-        "type" : "git", 
-        "url" : "git@github.com:Chinvaejay/classnames.git"
+        "type": "git",
+        "url": "git@github.com:Chinvaejay/classnames.git"
     },
     "description": "Convert className",
-    "version": "0.0.3",
+    "version": "0.1.0",
     "publisher": "qinweijie",
     "engines": {
         "vscode": "^1.57.0"
@@ -47,28 +47,27 @@
                 "when": "editorTextFocus"
             }
         ],
-		"configuration": {
-			"type": "object",
-			"title": "Convert ClassName 配置",
-			"properties": {
-				"classnames.moduleName": {
-					"type": "string",
-					"default": "style",
-					"description": "引入css模块名称"
-				},
-				"classnames.classnames": {
-					"type": "string",
-					"default": "classnames",
-					"description": "classnames模块引入别名"
-				},
-				"classnames.copy": {
-					"type": "boolean",
-					"default": false,
-					"description": "将*.css文件复制生成*.module.css, 并引入"
-				}
-				
-			}
-		}
+        "configuration": {
+            "type": "object",
+            "title": "Convert ClassName 配置",
+            "properties": {
+                "classnames.moduleName": {
+                    "type": "string",
+                    "default": "style",
+                    "description": "引入css模块名称"
+                },
+                "classnames.classnames": {
+                    "type": "string",
+                    "default": "classnames",
+                    "description": "classnames模块引入别名"
+                },
+                "classnames.copy": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "将*.css文件复制生成*.module.css, 并引入"
+                }
+            }
+        }
     },
     "scripts": {
         "vscode:prepublish": "yarn run compile",
