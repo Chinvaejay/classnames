@@ -7,7 +7,8 @@
 
 ![使用命令](src/assets/使用命令.gif)
 # 快捷键
-cmd + shift + a
+<s>cmd + shift + a</s> alt + z
+别想快捷键了, 右键点击就好, 或者自行修改
 
 # 使用自动复制css文件
 ![使用自动复制css文件](src/assets/使用自动复制css文件.gif)

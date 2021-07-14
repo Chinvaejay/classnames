@@ -42,8 +42,8 @@
         "keybindings": [
             {
                 "command": "classnames.convert",
-                "key": "ctrl+shift+a",
-                "mac": "cmd+shift+a",
+                "key": "alt+z",
+                "mac": "alt+z",
                 "when": "editorTextFocus"
             }
         ],
