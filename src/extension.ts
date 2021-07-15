@@ -59,7 +59,7 @@ const replaceClassName = (text: string) => {
       if (/\-/g.test(rest[0])) {
         return `className={${options.moduleName}[${rest[0].replace(/\"/g, "'")}]}`;
       }
-      return `className={${options.moduleName}.${rest[0].replace(/\"/g, '')}}`;
+      return `className={${options.moduleName}.${rest[1]}}`;
     }
   });
 };
